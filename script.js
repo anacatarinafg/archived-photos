@@ -20,12 +20,9 @@ function cursorPosition(e) {
 
 function moveImage(xAmount, yAmount) {
     images.forEach(function (image) {
-        let movementStrength = 5 + (Math.random() * 15);
-
-        image.style.left = (image.offsetLeft) - (xAmount / movementStrength) + "px";
-        image.style.top = (image.offsetTop) - (yAmount / movementStrength) + "px";
-
-
-
-    })
-}
+      let movementStrength = 5 + (Math.random() * 15);
+  
+      image.style.left = (image.offsetLeft) - (xAmount / movementStrength) + "px";
+      image.style.top = (image.offsetTop) - (yAmount / movementStrength) + "px";
+    });
+  }
